@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Yonetim.master.cs" Inherits="GUNLUK.admin.Yonetim" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="Panel1" runat="server">YÖNETİM PANELİ</asp:Panel>
+
+            <asp:Panel ID="Panel2" runat="server">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="kategori.aspx">Kategori</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="yazi.aspx">Yazı</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="sayfa.aspx">Sayfa</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="kullanici.aspx">Kullanıcı</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="yorum.aspx">Yorum</asp:HyperLink>
+                &nbsp;</asp:Panel>
+            
+            <asp:Panel ID="Panel3" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+                </asp:ContentPlaceHolder> <!--bunun dışındakilr ortak kullanılır.--->
+            </asp:Panel>
+
+            <asp:Panel ID="Panel4" runat="server">FOOTER</asp:Panel>
+            
+        </div>
+    </form>
+</body>
+</html>

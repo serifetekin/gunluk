@@ -742,6 +742,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
+    <Content Include="admin\Yorum.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\Giris.aspx.cs">
@@ -812,6 +813,13 @@
     </Compile>
     <Compile Include="YAZI.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Yorum.aspx.cs">
+      <DependentUpon>Yorum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Yorum.aspx.designer.cs">
+      <DependentUpon>Yorum.aspx</DependentUpon>
     </Compile>
     <Compile Include="YORUM.cs">
       <DependentUpon>Model1.tt</DependentUpon>

@@ -78,6 +78,7 @@
     <Content Include="admin\Giris.aspx" />
     <Content Include="admin\Kategori.aspx" />
     <Content Include="admin\Kullanici.aspx" />
+    <Content Include="admin\Sayfa.aspx" />
     <Content Include="admin\Yazi.aspx" />
     <Content Include="bin\CKEditor.NET.dll" />
     <Content Include="bin\CKFinder.dll" />
@@ -732,6 +733,9 @@
     <Content Include="ckfinder\skins\v1\uipanel.css" />
     <Content Include="ckfinder\translations.txt" />
     <Content Include="Default.aspx" />
+    <Content Include="image\resim1.jpg" />
+    <Content Include="image\resim2.jpg" />
+    <Content Include="image\sr.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -767,6 +771,13 @@
     </Compile>
     <Compile Include="admin\Kullanici.aspx.designer.cs">
       <DependentUpon>Kullanici.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Sayfa.aspx.cs">
+      <DependentUpon>Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Sayfa.aspx.designer.cs">
+      <DependentUpon>Sayfa.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Yazi.aspx.cs">
       <DependentUpon>Yazi.aspx</DependentUpon>
@@ -879,6 +890,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

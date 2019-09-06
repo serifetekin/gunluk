@@ -105,5 +105,6 @@ namespace GUNLUK.admin
             GridView1.DataBind();
 
         }
+
     }
 }

@@ -44,7 +44,7 @@
                 </td>
                 <td class="auto-style1">
 
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%" DataKeyNames="YAZI_REFNO" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%" DataKeyNames="YAZI_REFNO" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True" PageSize="4">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
                             <asp:CommandField HeaderText="Seç" ShowSelectButton="True" />

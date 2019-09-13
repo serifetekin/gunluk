@@ -14,7 +14,14 @@
     .auto-style4 {
         height: 24px;
     }
-</style>
+        .auto-style5 {
+            width: 157px;
+            height: 32px;
+        }
+        .auto-style6 {
+            height: 32px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel ID="pnlListe" runat="server">
@@ -29,22 +36,23 @@
             </tr>
             <tr>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BorderStyle="None" BorderWidth="1px" CellPadding="4" CssClass="auto-style4" DataKeyNames="KATEGORI_REFNO" GridLines="Horizontal" OnPageIndexChanging="GridView1_PageIndexChanging" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" PageSize="5" Width="100%" OnRowUpdating="GridView1_RowUpdating">
-                        <AlternatingRowStyle BackColor="#F7F7F7" />
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" CssClass="auto-style4" DataKeyNames="KATEGORI_REFNO" GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" PageSize="5" Width="100%" ForeColor="#333333" >
+                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
                             <asp:CommandField HeaderText="Seç" ShowSelectButton="True" />
                             <asp:BoundField DataField="KATEGORI_REFNO" HeaderText="Kategori Refno" />
                             <asp:BoundField DataField="KATEGORI_ADI" HeaderText="Kategori Adı" />
                         </Columns>
-                        <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-                        <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
-                        <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
-                        <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
-                        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
-                        <SortedAscendingCellStyle BackColor="#F4F4FD" />
-                        <SortedAscendingHeaderStyle BackColor="#5A4C9D" />
-                        <SortedDescendingCellStyle BackColor="#D8D8F0" />
-                        <SortedDescendingHeaderStyle BackColor="#3E3277" />
+                        <EditRowStyle BackColor="#999999" />
+                        <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                     </asp:GridView>
                 </td>
             </tr>
@@ -56,8 +64,8 @@
                 <td>
                     <table cellspacing="0" class="auto-style1">
                         <tr>
-                            <td class="auto-style2">&nbsp;</td>
-                            <td>
+                            <td class="auto-style3"></td>
+                            <td class="auto-style4">
                                 <asp:Label ID="Label4" runat="server" Text="KAYIT FORMU"></asp:Label>
                             </td>
                         </tr>
@@ -70,10 +78,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style2">
+                            <td class="auto-style5">
                                 <asp:Label ID="Label3" runat="server" Text="Kategori Adı"></asp:Label>
                             </td>
-                            <td>
+                            <td class="auto-style6">
                                 <asp:TextBox ID="txtKATEGORI_ADI" runat="server"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtKATEGORI_ADI" ErrorMessage="Kategori Adı Giriniz" ValidationGroup="KayitFormu"></asp:RequiredFieldValidator>
                             </td>

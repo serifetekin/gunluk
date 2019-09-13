@@ -733,6 +733,7 @@
     <Content Include="ckfinder\skins\v1\uipanel.css" />
     <Content Include="ckfinder\translations.txt" />
     <Content Include="Default.aspx" />
+    <Content Include="iletisim.aspx" />
     <Content Include="image\resim1.jpg" />
     <Content Include="image\resim2.jpg" />
     <Content Include="image\sr.jpg" />
@@ -749,6 +750,7 @@
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="admin\Yorum.aspx" />
+    <Content Include="yazidetay.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\Giris.aspx.cs">
@@ -807,6 +809,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KATEGORI.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -847,6 +856,13 @@
     </Compile>
     <Compile Include="admin\Yorum.aspx.designer.cs">
       <DependentUpon>Yorum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yazidetay.aspx.cs">
+      <DependentUpon>yazidetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yazidetay.aspx.designer.cs">
+      <DependentUpon>yazidetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="YORUM.cs">
       <DependentUpon>Model1.tt</DependentUpon>

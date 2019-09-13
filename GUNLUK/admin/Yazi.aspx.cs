@@ -93,5 +93,15 @@ namespace GUNLUK.admin
             pnlListe.Visible = true;
 
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            // Vazgeç
+            GridView1.DataSource = db.VW_YAZI.ToList();
+            GridView1.DataBind();
+
+            pnlKayit.Visible = false;
+            pnlListe.Visible = true;
+        }
     }
 }

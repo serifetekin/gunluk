@@ -161,7 +161,7 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td>
                     <asp:Button ID="Button3" runat="server" Text="Kaydet" Width="78px" OnClick="Button3_Click" ValidationGroup="KayıtFormu" />
-                    <asp:Button ID="Button4" runat="server" Text="Vazgeç" />
+                    <asp:Button ID="Button4" runat="server" Text="Vazgeç" OnClick="Button4_Click" />
                     <asp:Button ID="Button5" runat="server" Text="Sil" />
                 </td>
             </tr>
